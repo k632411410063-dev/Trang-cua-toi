@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio of Phạm Hùng - Third-year student at Foreign Trade University (FTU) and aspiring web developer." />
+  <meta name="author" content="Phạm Hùng" />
+  <title>Phạm Hùng | Personal Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" aria-label="Phạm Hùng Portfolio Home">
+        <span class="logo-symbol">&lt;</span><span class="logo-text">Phạm Hùng</span><span class="logo-symbol">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Hero / Home Section -->
+    <section class="hero section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge fade-in">
+            <span class="badge-dot"></span>
+            <span>Aspiring Web Developer &amp; Tech Enthusiast</span>
+          </div>
+          
+          <h1 class="hero-title fade-in">
+            Hi, I'm <span class="gradient-text">Phạm Hùng</span>
+          </h1>
+          
+          <p class="hero-subtitle fade-in">
+            Third-year student at <strong>Foreign Trade University (FTU)</strong>
+          </p>
+          
+          <p class="hero-description fade-in">
+            Passionate about bridging business understanding with modern technology. I am currently learning web development, building hands-on projects, and exploring modern digital solutions with code.
+          </p>
+          
+          <div class="hero-actions fade-in">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Work</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get In Touch</span>
+            </a>
+          </div>
+
+          <div class="hero-quick-info fade-in">
+            <div class="quick-info-item">
+              <span class="quick-info-label">Current Status:</span>
+              <span class="quick-info-val">3rd Year Student @ FTU</span>
+            </div>
+            <div class="quick-info-divider"></div>
+            <div class="quick-info-item">
+              <span class="quick-info-label">Focus Area:</span>
+              <span class="quick-info-val">Frontend &amp; Python Basics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual fade-in">
+          <div class="code-card">
+            <div class="code-card-header">
+              <div class="dot red"></div>
+              <div class="dot yellow"></div>
+              <div class="dot green"></div>
+              <span class="code-card-title">student_profile.js</span>
+            </div>
+            <div class="code-card-body">
+              <pre><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Phạm Hùng"</span>,
+  <span class="code-prop">university</span>: <span class="code-string">"Foreign Trade University (FTU)"</span>,
+  <span class="code-prop">year</span>: <span class="code-string">"3rd Year"</span>,
+  <span class="code-prop">learning</span>: [
+    <span class="code-string">"Python"</span>, 
+    <span class="code-string">"HTML & CSS"</span>, 
+    <span class="code-string">"JavaScript"</span>, 
+    <span class="code-string">"Data Analysis"</span>
+  ],
+  <span class="code-prop">passionateAbout</span>: <span class="code-string">"Building practical web apps"</span>,
+  <span class="code-prop">isConstantlyLearning</span>: <span class="code-keyword">true</span>
+};</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Me Section -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Background &amp; Story</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">A glimpse into my journey as an FTU student venturing into the world of web development.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-card card fade-in">
+            <h3 class="card-title">Student &amp; Continuous Learner</h3>
+            <p>
+              Hello! My name is <strong>Phạm Hùng</strong>. I am currently in my third year at <strong>Foreign Trade University (FTU)</strong>. Coming from an environment known for business acumen and international trade, I discovered a strong interest in technology and software development.
+            </p>
+            <p>
+              I believe that combining analytical thinking with software engineering skills opens up great opportunities to build useful tools and digital products. Although I am at the beginning of my web development path, I am constantly learning, writing code, and turning ideas into responsive, accessible websites.
+            </p>
+            <p>
+              My goal is to master modern frontend techniques, improve my problem-solving skills with Python and JavaScript, and craft clean, user-friendly digital experiences.
+            </p>
+          </div>
+
+          <div class="about-highlights-grid">
+            <div class="highlight-card card fade-in">
+              <div class="highlight-icon">🎓</div>
+              <div class="highlight-content">
+                <span class="highlight-value">FTU Student</span>
+                <span class="highlight-label">3rd Year Undergraduate</span>
+              </div>
+            </div>
+
+            <div class="highlight-card card fade-in">
+              <div class="highlight-icon">💻</div>
+              <div class="highlight-content">
+                <span class="highlight-value">Self-Taught</span>
+                <span class="highlight-label">Web Dev &amp; Programming</span>
+              </div>
+            </div>
+
+            <div class="highlight-card card fade-in">
+              <div class="highlight-icon">📊</div>
+              <div class="highlight-content">
+                <span class="highlight-value">Data-Driven</span>
+                <span class="highlight-label">Analytical Mindset</span>
+              </div>
+            </div>
+
+            <div class="highlight-card card fade-in">
+              <div class="highlight-icon">🚀</div>
+              <div class="highlight-content">
+                <span class="highlight-value">Goal-Oriented</span>
+                <span class="highlight-label">Building Real-World Projects</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Skills Section -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Core Competencies</span>
+          <h2 class="section-title">My Skills</h2>
+          <p class="section-subtitle">Technologies and capabilities I am actively studying and applying in practice.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill 1: Python -->
+          <div class="skill-card card fade-in">
+            <div class="skill-header">
+              <div class="skill-icon-wrap python-accent">
+                <span class="skill-symbol">🐍</span>
+              </div>
+              <div>
+                <h3 class="skill-name">Python</h3>
+                <span class="skill-category">Programming &amp; Scripting</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Utilized for fundamental programming logic, automation scripts, and foundational data manipulation exercises.
+            </p>
+            <ul class="skill-details">
+              <li>Core Python syntax &amp; OOP fundamentals</li>
+              <li>Automation &amp; basic scripting</li>
+              <li>Data structure manipulation</li>
+            </ul>
+          </div>
+
+          <!-- Skill 2: HTML & CSS -->
+          <div class="skill-card card fade-in">
+            <div class="skill-header">
+              <div class="skill-icon-wrap html-accent">
+                <span class="skill-symbol">🎨</span>
+              </div>
+              <div>
+                <h3 class="skill-name">HTML &amp; CSS</h3>
+                <span class="skill-category">Web Design &amp; Layouts</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Crafting structured, semantic web layouts with clean CSS3 styling, Flexbox, CSS Grid, and responsive design principles.
+            </p>
+            <ul class="skill-details">
+              <li>Semantic HTML5 structure &amp; accessibility</li>
+              <li>Modern CSS3 (Flexbox, Grid, Custom Properties)</li>
+              <li>Mobile-first responsive styling</li>
+            </ul>
+          </div>
+
+          <!-- Skill 3: JavaScript -->
+          <div class="skill-card card fade-in">
+            <div class="skill-header">
+              <div class="skill-icon-wrap js-accent">
+                <span class="skill-symbol">⚡</span>
+              </div>
+              <div>
+                <h3 class="skill-name">JavaScript</h3>
+                <span class="skill-category">Client-Side Interactivity</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Writing vanilla JavaScript to handle DOM manipulation, event listeners, dynamic UI behaviors, and async operations.
+            </p>
+            <ul class="skill-details">
+              <li>ES6+ syntax (arrow functions, modules, promises)</li>
+              <li>DOM manipulation &amp; event handling</li>
+              <li>Interactive UI components &amp; state logic</li>
+            </ul>
+          </div>
+
+          <!-- Skill 4: Data Analysis -->
+          <div class="skill-card card fade-in">
+            <div class="skill-header">
+              <div class="skill-icon-wrap data-accent">
+                <span class="skill-symbol">📈</span>
+              </div>
+              <div>
+                <h3 class="skill-name">Data Analysis</h3>
+                <span class="skill-category">Analytical &amp; Insight Thinking</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Combining quantitative methods with business intuition to explore datasets, generate charts, and uncover actionable insights.
+            </p>
+            <ul class="skill-details">
+              <li>Data cleaning and exploratory analysis</li>
+              <li>Statistical thinking &amp; chart interpretation</li>
+              <li>Business metrics &amp; insight reporting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Projects Section -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Portfolio Showcase</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">
+            A selection of sample projects illustrating my learning progression. <span class="placeholder-notice">(Note: These are sample placeholders that will be updated as new projects are completed).</span>
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card card fade-in">
+            <div class="project-banner">
+              <div class="sample-tag">Sample Project 01</div>
+              <div class="project-visual-icon">📊</div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Data Analysis</span>
+              </div>
+              <h3 class="project-title">Student Budget &amp; Expense Analyzer</h3>
+              <p class="project-description">
+                A sample analytical tool designed to help university students track monthly expenditures, classify budgets, and visualize spending habits over time.
+              </p>
+              <div class="project-footer">
+                <span class="project-status">Concept / Learning Project</span>
+                <div class="project-links">
+                  <a href="#projects" class="project-link" title="Demo preview">Demo ↗</a>
+                  <a href="#projects" class="project-link" title="Source repository">Code &lt;/&gt;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card card fade-in">
+            <div class="project-banner">
+              <div class="sample-tag">Sample Project 02</div>
+              <div class="project-visual-icon">📝</div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <h3 class="project-title">StudyFlow - Academic Task Tracker</h3>
+              <p class="project-description">
+                A clean, responsive web application for managing university coursework deadlines, daily study tasks, and exam countdowns using local storage.
+              </p>
+              <div class="project-footer">
+                <span class="project-status">Sample Web App</span>
+                <div class="project-links">
+                  <a href="#projects" class="project-link" title="Demo preview">Demo ↗</a>
+                  <a href="#projects" class="project-link" title="Source repository">Code &lt;/&gt;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card card fade-in">
+            <div class="project-banner">
+              <div class="sample-tag">Sample Project 03</div>
+              <div class="project-visual-icon">🌐</div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">HTML &amp; CSS</span>
+                <span class="tag">UI/UX</span>
+              </div>
+              <h3 class="project-title">FTU Course Hub &amp; Resource Portal</h3>
+              <p class="project-description">
+                A modern responsive prototype portal concept for sharing study materials, subject reviews, and club event announcements among FTU students.
+              </p>
+              <div class="project-footer">
+                <span class="project-status">UI/UX Prototype</span>
+                <div class="project-links">
+                  <a href="#projects" class="project-link" title="Demo preview">Demo ↗</a>
+                  <a href="#projects" class="project-link" title="Source repository">Code &lt;/&gt;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Contact Section -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Contact Me</h2>
+          <p class="section-subtitle">Feel free to reach out for collaboration, questions, or just to say hello!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Information Cards (Placeholders) -->
+          <div class="contact-info fade-in">
+            <div class="contact-info-card card">
+              <div class="info-icon">📧</div>
+              <div class="info-details">
+                <span class="info-label">Email (Placeholder)</span>
+                <a href="mailto:hung.pham.example@email.com" class="info-value">hung.pham.example@email.com</a>
+              </div>
+            </div>
+
+            <div class="contact-info-card card">
+              <div class="info-icon">💼</div>
+              <div class="info-details">
+                <span class="info-label">LinkedIn (Placeholder)</span>
+                <a href="https://linkedin.com/in/phamhung-example" target="_blank" rel="noopener noreferrer" class="info-value">linkedin.com/in/phamhung-example</a>
+              </div>
+            </div>
+
+            <div class="contact-info-card card">
+              <div class="info-icon">🐙</div>
+              <div class="info-details">
+                <span class="info-label">GitHub (Placeholder)</span>
+                <a href="https://github.com/phamhung-example" target="_blank" rel="noopener noreferrer" class="info-value">github.com/phamhung-example</a>
+              </div>
+            </div>
+
+            <div class="contact-info-card card">
+              <div class="info-icon">🏫</div>
+              <div class="info-details">
+                <span class="info-label">Location / University</span>
+                <span class="info-value">Foreign Trade University, Hanoi, Vietnam</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper card fade-in">
+            <h3 class="form-title">Send Me a Message</h3>
+            <p class="form-subtitle">This interactive demo form will provide instant feedback on submission.</p>
+            
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="e.g. John Doe" required />
+                <span class="error-msg" id="name-error">Please enter your name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="e.g. john@example.com" required />
+                <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="e.g. Connecting / Web Dev Discussion" required />
+                <span class="error-msg" id="subject-error">Please enter a subject.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" rows="4" class="form-input form-textarea" placeholder="Type your message here..." required></textarea>
+                <span class="error-msg" id="message-error">Please enter your message.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                <span>Send Message</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast" role="alert" aria-live="polite">
+    <div class="toast-icon">✓</div>
+    <div class="toast-content">
+      <h4 class="toast-title" id="toast-title">Message Sent!</h4>
+      <p class="toast-message" id="toast-message">Thank you! This is a demo form, your message was handled locally.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-logo">Phạm Hùng</span>
+        <p class="footer-tagline">3rd-year student @ Foreign Trade University | Learning Web Development</p>
+      </div>
+
+      <div class="footer-center">
+        <ul class="footer-nav">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-copy">&copy; <span id="current-year"></span> Phạm Hùng. Built with HTML, CSS &amp; Vanilla JS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
